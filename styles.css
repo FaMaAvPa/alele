@@ -1,3 +1,12 @@
+/*Fuentes Chongi Chongi*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -7,21 +16,42 @@
     width: 1080px;
     height: 100%;
     margin: auto;
-    background-color: blue;
+    background-color: cadetblue ;
 }
 
 /* Titulos */
 .titulo{
     text-align: center;
     color: aquamarine;
+    font-family: "Press Start 2P", system-ui;
     padding-top: 5px;
 }
 
 /*Header y Navegador*/
-.header_navegador{
-    background-color: aqua;
+.header{
+    background-color: skyblue;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 10% auto;
 }
-.header_navegador li{
+
+.header img{
+    padding: 5px ;
+    width: 75px;
+    margin: auto;
+}
+.header_navegador{
+    margin: auto;
+    background-color: skyblue;
+    width: 100%;
+}
+
+.header_navegador ul{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.header_navegador ul li{
     display: inline;
     list-style: none;
 }
@@ -33,6 +63,24 @@ main{
 
 /* Footer */
 
+/* Pagina Index */
+
+.index_seleccion{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.index_seleccion  img{
+    margin: auto;
+    width: 100%;
+    background-color: rgb(220, 59, 22);
+}
+
+.index_seleccion  img:hover{
+    transform: scale(1.08);
+    transition-duration: 500ms;
+    transform-origin: 500ms;
+}
 /* Página Nosotros */
 .div_nosotros_1{
     display: flex;
