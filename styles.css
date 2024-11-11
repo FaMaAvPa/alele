@@ -36,6 +36,11 @@ body{
 /*Header y Navegador*/
 .header{
     background-color: skyblue;
+}
+
+.header_aberration{
+    margin: auto;
+    width: 1260px;
     text-align: center;
     display: grid;
     grid-template-columns: 10% auto;
@@ -81,12 +86,11 @@ main{
     margin: auto;
     width: 100%;
     background-color: rgb(220, 59, 22);
+    transition: transform 0.5s ease;
 }
 
 .index_seleccion  img:hover{
     transform: scale(1.08);
-    transition-duration: 500ms;
-    transform-origin: 500ms;
 }
 /* Página Nosotros */
 .circulo_nosotros{
