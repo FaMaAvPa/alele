@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: "Poppins", sans-serif; */
+
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
+    background-color: rgb(23, 201, 142);
 }
 
 .aberracion{
     width: 1080px;
     height: 100%;
     margin: auto;
-    background-color: blue;
 }
 
 /* Titulos */
@@ -29,17 +35,51 @@
 /* Main */
 main{
     background-color: cadetblue;
+    padding-bottom: 50px;
 }
 
 /* Footer */
 
 /* Página Nosotros */
-.div_nosotros_1{
+.circulo_nosotros{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     height: 300px;
     margin: 5%;
     padding: 7%;
     border-radius: 50%;
     border: 2px solid skyblue;
+}
+
+.circulo_nosotros img{
+    width: 70%;
+    height: 70%;
+}
+
+.circulo_nosotros p{
+    color: azure;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.info{
+    display: grid;
+    grid-template-areas: 
+    "nos1 nos2"
+    "nos3 nos2";
+    align-items: center;
+    justify-content: center;
+}
+
+.nos1{
+    grid-area: nos1;
+}
+.nos2{
+    grid-area: nos2;
+}
+.nos3{
+    grid-area: nos3;
 }
