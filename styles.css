@@ -10,6 +10,13 @@
     background-color: blue;
 }
 
+/* Titulos */
+.titulo{
+    text-align: center;
+    color: aquamarine;
+    padding-top: 5px;
+}
+
 /*Header y Navegador*/
 .header_navegador{
     background-color: aqua;
@@ -17,4 +24,22 @@
 .header_navegador li{
     display: inline;
     list-style: none;
+}
+
+/* Main */
+main{
+    background-color: cadetblue;
+}
+
+/* Footer */
+
+/* Página Nosotros */
+.div_nosotros_1{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin: 5%;
+    padding: 7%;
+    border-radius: 50%;
+    border: 2px solid skyblue;
 }
