@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.aberracion{
+    width: 1080px;
+    height: 100%;
+    margin: auto;
+    background-color: blue;
+}
+
+/*Header y Navegador*/
+.header_navegador{
+    background-color: aqua;
+}
+.header_navegador li{
+    display: inline;
+    list-style: none;
+}
