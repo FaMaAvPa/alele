@@ -8,17 +8,21 @@
 </head>
 <body>
     <main>
-        <h1>Iniciar sesión</h1>
-        <form action="../login.php" method="POST">
-            <label for="username">Nombre de usuario:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Iniciar sesión</button>
-        </form>
-        <p>¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+        <div class="aberracion_login">
+            <div class="aberracion_login_2">
+                <h1 class="titulo_form">Iniciar sesión</h1>
+                <form action="../login.php" method="POST">
+                    <label class="texto_form" for="username">Nombre de usuario:</label>
+                    <input type="text" id="username" name="username" required>
+        
+                    <label class="texto_form" for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+        
+                    <button class="texto_form" type="submit">Iniciar sesión</button>
+                </form>
+                <p class="detalles_form">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+            </div>
+        </div>
     </main>
 </body>
 </html>
