@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root"; // Por defecto en XAMPP
 $password = ""; // Por defecto en XAMPP
-$dbname = "wiki_users";
+$dbname = "wiki_alele";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
