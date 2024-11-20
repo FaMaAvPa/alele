@@ -6,6 +6,16 @@
     font-weight: 400;
     font-style: normal;
   }
+
+:root {
+    --ColorPrimario_1:rgb(9, 26, 123);
+    --ColorPrimario_2:rgb(210, 13, 13); 
+    --ColorPrimario_3:rgb(15, 142, 205); 
+    --ColorFondo:rgb(11, 19, 26);
+    --ColorSeleccion:rgb(224, 224, 224);
+    --ColorTexto_1:rgb(231, 231, 231);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* font-family: "Poppins", sans-serif; */
 
@@ -15,27 +25,53 @@
 }
 
 body{
-    background-color: rgb(23, 201, 142);
+    background-color:var(--ColorFondo);
 }
 
 .aberracion{
     width: 1080px;
     height: 100%;
+    padding: 0px 0px 200px;
     margin: auto;
-    background-color: cadetblue ;
+    background-color:var(--ColorPrimario_3) ;
 }
 
 /* Titulos */
 .titulo{
     text-align: center;
-    color: aquamarine;
+    color: var(--ColorTexto_1);
     font-family: "Press Start 2P", system-ui;
-    padding-top: 5px;
+    padding: 15px 0px;
 }
 
+.titulo_index{
+    text-align: center;
+    color: var(--ColorTexto_1);
+    font-family: "Press Start 2P", system-ui;
+    margin: 200px 0px 0px;
+}
+
+.texto_descripcion{
+    text-align:justify;
+    color: var(--ColorTexto_1);
+    font-size: larger;
+    font-family: "Press Start 2P", system-ui;
+    padding: 15px 0px;
+}
 /*Header y Navegador*/
+.navegador_titulo{
+    color: var(--ColorTexto_1);
+    font-family: "Press Start 2P", system-ui;
+    padding: 15px 0px;
+}
+
+.navegador_lista{
+    color: var(--ColorTexto_1);
+    font-family: "Press Start 2P", system-ui;
+}
 .header{
-    background-color: skyblue;
+    background-color:var(--ColorPrimario_1);
+    /*border: 5px solid var(--ColorTexto_1);*/
 }
 
 .header_aberration{
@@ -53,7 +89,6 @@ body{
 }
 .header_navegador{
     margin: auto;
-    background-color: skyblue;
     width: 100%;
 }
 
@@ -62,15 +97,16 @@ body{
     justify-content: space-around; 
 }
 
-.header_navegador ul li{
+.header_navegador ul a{
     display: inline;
+    text-decoration: none;
     list-style: none;
+    color: var(--ColorTexto_1);
 }
 
 /* Main */
 main{
-    background-color: cadetblue;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 /* Footer */
@@ -80,18 +116,73 @@ main{
 .index_seleccion{
     display: grid;
     grid-template-columns: auto auto auto;
+    background-color: var(--ColorPrimario_2);
+    padding: 20px;
 }
 
 .index_seleccion  img{
     margin: auto;
-    width: 100%;
-    background-color: rgb(220, 59, 22);
-    transition: transform 0.5s ease;
+    width: 90%;
+    background-color: var(--ColorPrimario_2);
+    transition: transform 0.1s ease;
+    border: 6px solid var(--ColorPrimario_2);
 }
 
 .index_seleccion  img:hover{
-    transform: scale(1.08);
+    transform: scale(1.1);
+    background-color: var(--ColorSeleccion);
+    border: 6px solid var(--ColorSeleccion);
 }
+
+/*Index Personajes*/
+
+.index_personajes{
+    margin: 5%;
+    display: grid;
+    width: 85%;
+    gap: 5%;
+    grid-template-columns: 50% 50%;
+}
+
+.index_personajes img{
+    border: 10px solid var(--ColorTexto_1);
+    width: 100%;
+}
+
+.index_primarias{
+    margin: 5%;
+    display: grid;
+    width: 85%;
+    gap: 5%;
+    grid-template-columns: 50% 50%;
+}
+
+.index_primarias div{
+    margin: 20px 0px 0px;
+}
+
+.index_primarias img{
+    border: 10px solid var(--ColorTexto_1);
+    width: 100%;
+}
+
+.index_secundarias{
+    margin: 5%;
+    display: grid;
+    width: 85%;
+    gap: 5%;
+    grid-template-columns: 50% 50%;
+}
+
+.index_secundarias div{
+    margin: 20px 0px 0px;
+}
+
+.index_secundarias img{
+    border: 10px solid var(--ColorTexto_1);
+    width: 100%;
+}
+
 /* Página Nosotros */
 .circulo_nosotros{
     display: flex;
